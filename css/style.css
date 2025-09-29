@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap');
+
+body{
+    background: rgb(201, 168, 233);
+}
+h1{
+    font-family: "Bitcount Prop Double Ink", system-ui;
+}
+p{
+    font-family: "Bitcount Prop Double Ink", system-ui;
+}
+header{
+    text-align: center;
+    border-bottom: solid 6px rgb(150, 72, 214);
+    margin-bottom: 50px;
+    padding: 50px; 
+}
