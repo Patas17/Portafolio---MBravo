@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap');
 
 body{
-    background: rgb(201, 168, 233);
+    background: #DFD3D5;
 }
 h1{
     font-family: "Bitcount Prop Double Ink", system-ui;
@@ -11,7 +11,25 @@ p{
 }
 header{
     text-align: center;
-    border-bottom: solid 6px rgb(150, 72, 214);
+    border-bottom: solid 6px #9F769D;
     margin-bottom: 50px;
     padding: 50px; 
+}
+mark{
+    /*background-color: #D0D9D9;*/
+    background-color: #6D8280;
+}
+#foto-perfil{
+    border: solid 2px #6D8280 ;
+    border-radius: 20px;
+}
+
+article{
+    border:solid 2px #9F769D;
+    width: 30%;
+    float: left;
+}
+nav a{
+    color: #6D8280;
+    text-decoration: none;
 }
