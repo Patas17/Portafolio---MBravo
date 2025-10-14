@@ -11,15 +11,18 @@
             <p>Desarrollador fullstack | Estudiante de Ingenieria en TI</p>
         </header>
         <!--Crear un menu de navegacion-->
-        <nav>
-            <a href="#">Inicio</a> <!--la etiqueta a crea un enlace-->
-            <a href="#">Sobre Mi</a><!--el href entre comillas es hacia donde me va a dirigir esa pagina-->
-            <a href="#">Mi Experiencia</a>
-            <a href="#">Contactame</a>
+        <nav id="menu-principal">
+            <ul>
+            <li><a href="#">Inicio</a></li> <!--la etiqueta a crea un enlace-->
+            <li><a href="#bienvenida">Sobre Mi</a></li><!--el href entre comillas es hacia donde me va a dirigir esa pagina-->
+            <li><a href="#experiencia">Mi Experiencia</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#">Contactame</a></li>
+        </ul>
         </nav>
         <!--Parte principal-->
         <main> <!---->
-            <section>
+            <section id="bienvenida">
                 <h2>Bienvenidos a mi Portafolio Profesional</h2>
                 <p>Soy <mark>Majo Bravo Calderon</mark> Me especializo en Lorem ipsum dolor sit amet, 
                     consectetur adipiscing elit. Morbi tellus lorem, aliquam nec dignissim at, porttitor at dolor. 
@@ -35,9 +38,10 @@
                     <p>Actualmente estudio la carrera de Tecnologias de la Informacion e Innovacion Digital</p>
                 </aside>
             </section>
-            <section>
+            <section id="experiencia">
                 <h2>Experiencia Profesional</h2>
-                <article>
+                <div id="lista-proyectos">
+                <article class="proyecto">
                     <h3>Proyecto Integrador</h3>
                     <p>Ipsum is simple etc</p>
                     <time datetime="2025-05">Mayo 2025</time>-<time datetime="2025-07">Julio 2025</time>
@@ -49,7 +53,7 @@
 
                     </ul>
                 </article>
-                <article>
+                <article class="proyecto">
                     <h3>Proyecto Integrador II</h3>
                     <p>Ipsum is simple etc</p>
                     <time datetime="2025-05">Mayo 2025</time>-<time datetime="2025-07">Julio 2025</time>
@@ -61,7 +65,7 @@
 
                     </ul>
                 </article>
-                <article>
+                <article class="proyecto">
                     <h3>Proyecto Integrador III</h3>
                     <p>Ipsum is simple etc</p>
                     <time datetime="2025-05">Mayo 2025</time>-<time datetime="2025-07">Julio 2025</time>
@@ -73,6 +77,55 @@
 
                     </ul>
                 </article>
+                </div>
+            </section>
+            <section id="habilidades">
+                <h2>Habilidades y competencias</h2>
+                <h3>Lenguajes y Teconologias</h3>
+                <ul class="lista-tecnologias">
+                    <li>HTML5</li>
+                    <li>CSS</li>
+                    <li>JS</li>
+                    <li>C#</li>
+                </ul>
+                <h3>Niveles de Dominio</h3>
+                <div>
+                    <label>HTML5</label>
+                    <progress max="100" value="80">80%</progress>
+                </div>
+                <div>
+                    <label>CSS</label>
+                    <progress max="100" value="80">60%</progress>
+                </div>
+                <div>
+                    <label>JS</label>
+                    <progress max="100" value="80">20%</progress>
+                </div>
+                <div>
+                    <label>C#</label>
+                    <progress max="100" value="80">70%</progress>
+                </div>
+            </section>
+            <section id="habilidades">
+                <h2>Contactame</h2>
+                <form>
+                    <div class="campos">
+                    <label>Nombre completo</label>
+                    <input type="text" value="" placeholder="Nombre completo">
+                </div>
+                <div class="campos">
+                    <label>Correo Electronico</label>
+                    <input type="email" value="" placeholder="ejemplo@gmail.com">
+                </div>
+                <div class="campos"> <!--div.nombreclase para agregar la clase mas rapido-->
+                    <label>Mensaje</label>
+                    <textarea></textarea>
+                </div>
+                <div class="campos">
+                    <!--<input type="button" value="enviar">-->
+                    <button type="submit">enviar</button>
+                </div>
+                </form>
             </section>
         </main>
         <!--Pie de la pagina-->
