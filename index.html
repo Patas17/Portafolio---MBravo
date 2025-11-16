@@ -1,137 +1,234 @@
 <!DOCTYPE html> <!-- Este indica la version de html que se esta utilizando -->
 <html lang="en"> <!--Es para elegir el idioma abreviado-->
-    <head> <!--Encabezado-->
-        <title>Portafolio Profesional</title> <!--Titulo del archivo-->
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body> <!--Aqui va todo lo que el usuario ve, es el cuerpo de programa-->
-        <header>
-            <h1>Portafolio Profesional</h1> <!--h1 es para colocar titulos, es de h1-h6-->
-            <h4>Majo Bravo Calderon</h4>
-            <p>Desarrollador fullstack | Estudiante de Ingenieria en TI</p>
-        </header>
-        <!--Crear un menu de navegacion-->
-        <nav id="menu-principal">
-            <ul>
+
+<head> <!--Encabezado-->
+    <title>Portafolio Profesional</title> <!--Titulo del archivo-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body> <!--Aqui va todo lo que el usuario ve, es el cuerpo de programa-->
+    <header>
+        <h1>Portafolio Profesional</h1> <!--h1 es para colocar titulos, es de h1-h6-->
+        <h4>Majo Bravo Calderon</h4>
+        <pa>Desarrollador fullstack | Estudiante de Ingenieria en TI</pa>
+    </header>
+    <!--Crear un menu de navegacion-->
+    <nav id="menu-principal">
+        <ul>
             <li><a href="#">Inicio</a></li> <!--la etiqueta a crea un enlace-->
-            <li><a href="#bienvenida">Sobre Mi</a></li><!--el href entre comillas es hacia donde me va a dirigir esa pagina-->
+            <li><a href="#bienvenida">Sobre Mi</a></li>
+            <!--el href entre comillas es hacia donde me va a dirigir esa pagina-->
             <li><a href="#experiencia">Mi Experiencia</a></li>
             <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#">Contactame</a></li>
+            <li><a href="#contacto">Contactame</a></li>
         </ul>
-        </nav>
-        <!--Parte principal-->
-        <main> <!---->
-            <section id="bienvenida">
-                <h2>Bienvenidos a mi Portafolio Profesional</h2>
-                <p>Soy <mark>Majo Bravo Calderon</mark> Me especializo en Lorem ipsum dolor sit amet, 
-                    consectetur adipiscing elit. Morbi tellus lorem, aliquam nec dignissim at, porttitor at dolor. 
-                    Mauris purus magna, consectetur laoreet feugiat vel, tempus ac neque. Aenean eget erat enim. 
-                    Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-                    Quisque consequat eget sapien at consectetur. Nam tincidunt non urna et vulputate. 
-                    In urna leo, varius id dui vulputate, auctor consequat diam.
+    </nav>
+    <!--Parte principal-->
+    <main> <!---->
+        <section id="bienvenida">
+            <h2>Bienvenidos a mi Portafolio Profesional</h2>
+            <p> Soy <mark>Majo Bravo Calderón</mark>, estudiante de Ingeniería en Desarrollo de Software Multiplataforma
+                en la Universidad Tecnológica de Cancún.
+                Actualmente curso el cuarto cuatrimestre y me apasiona el desarrollo de aplicaciones innovadoras que
+                conecten la tecnología con las necesidades de las personas.
+                Me especializo en el diseño y programación de interfaces limpias, funcionales y orientadas a la
+                experiencia del usuario.
+            </p>
+
+            <p>
+                Tengo conocimientos en <strong>HTML, CSS, JavaScript y C#</strong>, así como en bases de datos MySQL y
+                en el uso de entornos de desarrollo como Visual Studio.
+                Disfruto aprender nuevas tecnologías y trabajar en proyectos que me permitan fortalecer mis habilidades
+                de <em>frontend</em> y <em>backend</em>.
+            </p>
+
+            <p>
+                Me considero una persona creativa, organizada y comprometida, con interés en seguir creciendo
+                profesionalmente dentro del ámbito del desarrollo de software.
+                Mi objetivo es formar parte de proyectos que impulsen la innovación y contribuyan a crear soluciones
+                digitales accesibles y sostenibles.
+            </p>
+            <p><small>Mi frase favorita es</small><em> "Primero resuelvo,</em> despues codifico</p>
+            <img src="images/foto-perfil.jpg" alt="Foto de perfil" id="foto-perfil">
+            <aside>
+                <h3>Sabias que...?</h3>
+                <p> Además de estudiar la carrera de <strong>Tecnologías de la Información e Innovación
+                        Digital</strong>,
+                    me apasiona explorar nuevas herramientas y lenguajes de programación por mi cuenta.
                 </p>
-                <p><small>Mi frase favorita es</small><em> "Primero resuelvo,</em> despues codifico</p>
-                <img src="images/foto-perfil.jpg" alt="Foto de perfil" id="foto-perfil">
-                <aside>
-                    <h3>Sabias que...?</h3>
-                    <p>Actualmente estudio la carrera de Tecnologias de la Informacion e Innovacion Digital</p>
-                </aside>
-            </section>
-            <section id="experiencia">
-                <h2>Experiencia Profesional</h2>
-                <div id="lista-proyectos">
+                <p>
+                    En mi tiempo libre disfruto crear pequeños proyectos personales donde combino el <em>diseño web</em>
+                    con la
+                    <em>programación</em>, buscando que cada interfaz transmita claridad, orden y creatividad.
+                </p>
+                <p>
+                    También me interesa aprender sobre <strong>inteligencia artificial</strong> y cómo puede integrarse
+                    en
+                    aplicaciones cotidianas para hacer la vida de las personas más fácil.
+                </p>
+            </aside>
+        </section>
+        <section id="experiencia">
+            <h2>Experiencia Profesional</h2>
+            <div id="lista-proyectos">
                 <article class="proyecto">
-                    <h3>Proyecto Integrador</h3>
-                    <p>Ipsum is simple etc</p>
-                    <time datetime="2025-05">Mayo 2025</time>-<time datetime="2025-07">Julio 2025</time>
+                    <h3>Flower Grow <time>Mayo 2025 - Julio 2025</time></h3>
+                    <p>
+                        Aplicación de escritorio desarrollada en C# y MySQL enfocada en el cuidado y seguimiento de
+                        plantas.
+                        Formó parte del proyecto integrador del cuarto cuatrimestre.
+                    </p>
                     <ul>
-                        <li>Tecnologias: .NET</li>
-                        <li>Gestion de inventarios</li> 
-                        <li>Basado en los ODS</li> 
-                        <li>Trabajo en Equipo</li> 
-
+                        <li>Tecnologías: C#, .NET, MySQL</li>
+                        <li>Gestión de usuarios y plantas favoritas</li>
+                        <li>Interfaz limpia y funcional orientada al usuario</li>
+                        <li>Basado en los Objetivos de Desarrollo Sostenible (ODS)</li>
                     </ul>
                 </article>
-                <article class="proyecto">
-                    <h3>Proyecto Integrador II</h3>
-                    <p>Ipsum is simple etc</p>
-                    <time datetime="2025-05">Mayo 2025</time>-<time datetime="2025-07">Julio 2025</time>
-                    <ul>
-                        <li>Tecnologias: .NET</li>
-                        <li>Gestion de inventarios</li> 
-                        <li>Basado en los ODS</li> 
-                        <li>Trabajo en Equipo</li> 
 
+                <article class="proyecto">
+                    <h3>Pagina web de Venta de casas <time>Mayo 2025 - Julio 2025</time></h3>
+                    <p>
+                        Página web creada durante la preparatoria con el objetivo de mostrar propiedades en venta
+                        mediante
+                        un diseño claro y moderno.
+                    </p>
+                    <ul>
+                        <li>Tecnologías: HTML, CSS</li>
+                        <li>Diseño responsivo y estructura de catálogo</li>
+                        <li>Formulario de contacto para interesados</li>
+                        <li>Primer acercamiento al desarrollo web completo</li>
                     </ul>
                 </article>
-                <article class="proyecto">
-                    <h3>Proyecto Integrador III</h3>
-                    <p>Ipsum is simple etc</p>
-                    <time datetime="2025-05">Mayo 2025</time>-<time datetime="2025-07">Julio 2025</time>
-                    <ul>
-                        <li>Tecnologias: .NET</li>
-                        <li>Gestion de inventarios</li> 
-                        <li>Basado en los ODS</li> 
-                        <li>Trabajo en Equipo</li> 
 
+                <article class="proyecto">
+                    <h3>App Ciclo Menstrual <time>Mayo 2025 - Julio 2025</time></h3>
+                    <p>
+                        Proyecto actual enfocado en crear una app móvil para el registro del ciclo menstrual, síntomas y
+                        recordatorios,
+                        buscando mejorar la salud y bienestar femenino.
+                    </p>
+                    <ul>
+                        <li>Tecnologías: Flutter / .NET MAUI (en planeación)</li>
+                        <li>Diseño enfocado en privacidad y accesibilidad</li>
+                        <li>Trabajo colaborativo en prototipado y estructura de datos</li>
+                        <li>En desarrollo</li>
                     </ul>
                 </article>
-                </div>
-            </section>
-            <section id="habilidades">
-                <h2>Habilidades y competencias</h2>
-                <h3>Lenguajes y Teconologias</h3>
-                <ul class="lista-tecnologias">
-                    <li>HTML5</li>
-                    <li>CSS</li>
-                    <li>JS</li>
-                    <li>C#</li>
-                </ul>
-                <h3>Niveles de Dominio</h3>
-                <div>
-                    <label>HTML5</label>
-                    <progress max="100" value="80">80%</progress>
-                </div>
-                <div>
-                    <label>CSS</label>
-                    <progress max="100" value="80">60%</progress>
-                </div>
-                <div>
-                    <label>JS</label>
-                    <progress max="100" value="80">20%</progress>
-                </div>
-                <div>
-                    <label>C#</label>
-                    <progress max="100" value="80">70%</progress>
-                </div>
-            </section>
-            <section id="habilidades">
-                <h2>Contactame</h2>
-                <form>
-                    <div class="campos">
-                    <label>Nombre completo</label>
-                    <input type="text" value="" placeholder="Nombre completo">
-                </div>
-                <div class="campos">
-                    <label>Correo Electronico</label>
-                    <input type="email" value="" placeholder="ejemplo@gmail.com">
-                </div>
-                <div class="campos"> <!--div.nombreclase para agregar la clase mas rapido-->
-                    <label>Mensaje</label>
-                    <textarea></textarea>
-                </div>
-                <div class="campos">
-                    <!--<input type="button" value="enviar">-->
-                    <button type="submit">enviar</button>
-                </div>
+            </div>
+        </section>
+
+        <!-- habilidades-->
+        <section id="habilidades">
+            <h2>Habilidades y competencias</h2>
+            <h3>Lenguajes y Tecnologías</h3>
+            <ul class="lista-tecnologias">
+                <li>HTML5</li>
+                <li>CSS</li>
+                <li>JS</li>
+                <li>C#</li>
+            </ul>
+
+            <h3>Niveles de Dominio</h3>
+            <div>
+                <label>HTML5</label>
+                <progress max="100" value="80">80%</progress>
+            </div>
+            <div>
+                <label>CSS</label>
+                <progress max="100" value="40">40%</progress>
+            </div>
+            <div>
+                <label>JS</label>
+                <progress max="100" value="20">20%</progress>
+            </div>
+            <div>
+                <label>C#</label>
+                <progress max="100" value="70">70%</progress>
+            </div>
+        </section>
+
+        <!-- contacto -->
+        <section id="contacto">
+            <div class="contenedor-form">
+                <h2>Contáctame</h2>
+
+                <form novalidate>
+                    <div class="grid">
+                        <div class="campo">
+                            <label for="nombre">Nombre completo</label>
+                            <input id="nombre" name="nombre" type="text" placeholder="Tu nombre completo" required>
+                        </div>
+
+                        <div class="campo">
+                            <label for="email">Correo electrónico</label>
+                            <input id="email" name="email" type="email" placeholder="ejemplo@correo.com" required>
+                        </div>
+
+                        <div class="campo">
+                            <label for="motivo">Motivo de contacto</label>
+                            <select id="motivo" name="motivo" required>
+                                <option value="">Selecciona una opción</option>
+                                <option value="cotizacion">Cotización</option>
+                                <option value="practicas">Prácticas Profesionales</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+
+                        <div class="campo">
+                            <label for="fecha">Fecha del evento</label>
+                            <input id="fecha" name="fecha" type="date">
+                        </div>
+
+                        <fieldset class="campo checkbox-group" aria-labelledby="metodos-label">
+                            <legend id="metodos-label">Métodos de contacto</legend>
+                            <label class="check">
+                                <input type="checkbox" name="metodo" value="whatsapp"> WhatsApp
+                            </label>
+                            <label class="check">
+                                <input type="checkbox" name="metodo" value="correo"> Correo electrónico
+                            </label>
+                        </fieldset>
+
+                        <fieldset class="campo radio-group" aria-labelledby="cliente-label">
+                            <legend id="cliente-label">¿Es cliente?</legend>
+                            <label class="radio">
+                                <input type="radio" name="cliente" value="si" required> Sí
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="cliente" value="no"> No
+                            </label>
+                        </fieldset>
+
+                        <div class="campo">
+                            <label for="colaboradores">Número de colaboradores</label>
+                            <input id="colaboradores" name="colaboradores" type="number" min="0" placeholder="0">
+                        </div>
+
+                        <div class="campo">
+                            <label for="archivo">Enviar requerimientos</label>
+                            <input id="archivo" name="archivo" type="file" accept=".pdf,.doc,.docx,.zip,image/*">
+                        </div>
+
+                        <div class="campo textarea">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje..."
+                                rows="6"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="acciones">
+                        <button type="submit" class="btn-principal">Enviar</button>
+                        <button type="reset" class="btn-secundario">Limpiar</button>
+                    </div>
                 </form>
-            </section>
-        </main>
+            </div>
+        </section>
         <!--Pie de la pagina-->
         <footer>
             <p>&copy;2025 Todos los derechos reservados</p>
             <address>Cancun, QRoo, Mexico</address>
         </footer>
-    </body>
+</body>
+
 </html>
